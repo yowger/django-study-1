@@ -4,5 +4,6 @@ from . import views
 # from .views import api_home
 
 urlpatterns = [
-    path('', views.api_home)
+    path('', views.api_home),
+    # path('products/', include('products.urls'),
 ]

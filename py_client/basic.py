@@ -7,8 +7,9 @@ endpoint = "http://127.0.0.1:8000/api/"
 # Application programming interface
 # json json={"query": "Hello World"} "content-type": "application/json
 # data data={"query": "Hello World"} "content-type": "application/x-www-form-urlencoded"
-get_response = requests.get(endpoint, params={'abc': 123}, json={'query': 'Hello World'})
-print(get_response) 
+# get_response = requests.get(endpoint, params={'abc': 123}, json={'query': 'Hello World'})
+get_response = requests.post(endpoint, json={'title': 'Hello World','content': 'more content'})
+print(get_response.text) 
 # print(get_response.text) 
 
 # To run this in command terminal, run the following command in the root directory terminal and type: python py_client/basic.py
